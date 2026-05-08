@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Honey</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Intro Screen -->
+    <div id="intro-screen" class="screen active">
+        <div class="heart-pulse">❤️</div>
+        <h1>A Special Surprise for You</h1>
+        <p>Turn up your volume and tap below...</p>
+        <button id="open-btn">Open My Surprise</button>
+    </div>
+
+    <!-- Main Experience -->
+    <div id="main-screen" class="screen">
+        <canvas id="particles-canvas"></canvas>
+
+        <div class="title-container">
+            <h1 class="glow-text">Happy Birthday, Niharika!</h1>
+            <p class="subtitle">Making every candle count.</p>
+        </div>
+
+        <div class="scene-container">
+            <div class="scene">
+                <div class="carousel" id="carousel">
+                    <!-- Image items will be injected here via JS -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+            <p></p>
+        </div>
+    </div>
+
+    <!-- YouTube Audio Player (Hidden) -->
+    <div style="position: absolute; top: -9999px; left: -9999px;">
+        <div id="youtube-player"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
